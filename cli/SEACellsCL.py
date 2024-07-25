@@ -62,7 +62,7 @@ def main(argv):
     
     os.makedirs(outdir,exist_ok = True)
     
-    if input_file.endswith(".rds"):
+    if input_file.lower().endswith(".rds"):
         try:
             import logging
             import anndata2ri
